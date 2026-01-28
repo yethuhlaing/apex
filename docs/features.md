@@ -1,17 +1,5 @@
 Deep Analysis Features
-1. Multi-Page Deep Crawl Analysis
 
-Crawl entire site (configurable depth/page limits)
-Aggregate metrics across all pages
-Identify best/worst performing pages
-Track consistency of AI-readiness across site sections
-
-2. Structured Data Validator
-
-Parse and validate Schema.org markup (JSON-LD, Microdata, RDFa)
-Check for Product, Article, FAQPage, HowTo schemas
-Score schema completeness and accuracy
-Recommend missing structured data opportunities
 
 3. Content Quality Scoring with NLP
 
@@ -41,13 +29,6 @@ Store snapshots of each analysis
 Show score improvements/regressions over time
 Alert on significant drops
 Visualize which optimizations actually moved the needle
-
-7. Page Speed & Core Web Vitals Integration
-
-Measure LCP, FID, CLS (AI crawlers care about accessible content)
-Analyze JavaScript blocking rendering
-Check for lazy-loading that might hide content from crawlers
-Mobile vs. desktop performance comparison
 
 8. Internal Linking Graph Analysis
 

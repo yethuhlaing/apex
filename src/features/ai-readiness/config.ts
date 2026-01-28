@@ -4,6 +4,7 @@ export const CHECK_WEIGHTS: Record<string, number> = {
     readability: 1.5,
     "heading-structure": 1.4,
     "meta-tags": 1.2,
+    "structured-data": 1.1, // Machine-readable content is valuable for AI
 
     // Domain-Level Checks (Moderate importance)
     "robots-txt": 0.9,
@@ -13,6 +14,9 @@ export const CHECK_WEIGHTS: Record<string, number> = {
     // Supporting Metrics
     "semantic-html": 1.0,
     accessibility: 0.9,
+
+    // Informational (neutral weight)
+    "anti-bot": 0, // Informational only, doesn't affect score
 };
 
 // Domain reputation lists
