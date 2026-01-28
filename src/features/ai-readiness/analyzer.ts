@@ -1,16 +1,16 @@
-import { AnalysisResult, CheckResult, CheckContext, FileCheckContext } from "@/types/ai-readiness";
+import { AnalysisResult, CheckResult, CheckContext, FileCheckContext } from "./types";
 import {
     CHECK_WEIGHTS,
     CONTENT_SIGNAL_IDS,
     SCORE_THRESHOLDS,
     BONUS_POINTS,
-} from "@/config/ai-readiness";
+} from "./config";
 import {
     extractTextContent,
     getDomainReputationBonus,
     getBaseUrl,
     normalizeUrl,
-} from "@/utils/ai-readiness";
+} from "./utils";
 import { runHtmlChecks, runFileChecks } from "./checks";
 
 export interface AnalyzerInput {

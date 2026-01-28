@@ -1,6 +1,6 @@
-import { Check, CheckContext, CheckResult } from "@/types/ai-readiness";
-import { CHECK_WEIGHTS } from "@/config/ai-readiness";
-import { calculateReadability } from "@/utils/ai-readiness";
+import { Check, CheckContext, CheckResult } from "../../types";
+import { CHECK_WEIGHTS } from "../../config";
+import { calculateReadability } from "../../utils";
 
 export const readabilityCheck: Check = {
     id: "readability",

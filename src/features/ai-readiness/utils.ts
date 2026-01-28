@@ -3,7 +3,7 @@ import {
     SECOND_TIER_DOMAINS,
     BONUS_POINTS,
     SCORE_THRESHOLDS,
-} from "@/config/ai-readiness";
+} from "./config";
 
 // Calculate Flesch-Kincaid readability score
 export function calculateReadability(text: string): number {

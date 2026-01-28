@@ -22,10 +22,9 @@ import {
     Eye,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import ScoreChart from "./ScoreChart";
-import RadarChart from "./RadarChart";
-import MetricBars from "./MetricBars";
-
+import RadarChart from "../components/RadarChart";
+import MetricBars from "../components/MetricBars";
+import ScoreChart from "../components/ScoreChart";
 interface ControlPanelProps {
     isAnalyzing: boolean;
     showResults: boolean;

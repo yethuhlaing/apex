@@ -21,8 +21,8 @@ import HeroInputSubmitButton from "@/components/sections/hero-input/Button/Butto
 import Globe from "@/components/sections/hero-input/_svg/Globe";
 import HeroScraping from "@/components/sections/hero-scraping/HeroScraping";
 import { Endpoint } from "@/components/shared/Playground/Context/types";
-import InlineResults from "@/features/ai-readiness/InlineResults";
-import ControlPanel from "@/features/ai-readiness/ControlPanel";
+import InlineResults from "@/features/ai-readiness/components/InlineResults";
+import ControlPanel from "@/features/ai-readiness/components/ControlPanel";
 
 // Import header components
 import HeaderBrandKit from "@/components/shared/header/BrandKit/BrandKit";

@@ -4,7 +4,7 @@ export { metadataCheck } from "./metadata";
 export { semanticHtmlCheck } from "./semantic-html";
 export { accessibilityCheck } from "./accessibility";
 
-import { Check } from "@/types/ai-readiness";
+import { Check } from "../../types";
 import { headingStructureCheck } from "./heading-structure";
 import { readabilityCheck } from "./readability";
 import { metadataCheck } from "./metadata";

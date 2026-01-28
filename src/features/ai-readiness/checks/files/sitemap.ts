@@ -1,6 +1,6 @@
-import { FileCheck, FileCheckContext, CheckResult } from "@/types/ai-readiness";
-import { CHECK_WEIGHTS, COMMON_SITEMAP_LOCATIONS } from "@/config/ai-readiness";
-import { fetchWithTimeout } from "@/utils/ai-readiness";
+import { FileCheck, FileCheckContext, CheckResult } from "../../types";
+import { CHECK_WEIGHTS, COMMON_SITEMAP_LOCATIONS } from "../../config";
+import { fetchWithTimeout } from "../../utils";
 
 export const sitemapCheck: FileCheck & {
     runWithRobotsSitemaps: (

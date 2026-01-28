@@ -1,5 +1,5 @@
-import { Check, CheckContext, CheckResult } from "@/types/ai-readiness";
-import { CHECK_WEIGHTS, SEMANTIC_TAGS } from "@/config/ai-readiness";
+import { Check, CheckContext, CheckResult } from "../../types";
+import { CHECK_WEIGHTS, SEMANTIC_TAGS } from "../../config";
 
 export const semanticHtmlCheck: Check = {
     id: "semantic-html",

@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import FirecrawlApp from "@mendable/firecrawl-js";
-import { analyzeWebsite } from "@/features/ai-readiness";
-import { normalizeUrl } from "@/utils/ai-readiness";
+import { analyzeWebsite, normalizeUrl } from "@/features/ai-readiness";
 
 const firecrawl = new FirecrawlApp({
     apiKey: process.env.FIRECRAWL_API_KEY!,

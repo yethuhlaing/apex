@@ -1,6 +1,6 @@
-import { FileCheck, FileCheckContext, CheckResult } from "@/types/ai-readiness";
-import { CHECK_WEIGHTS } from "@/config/ai-readiness";
-import { fetchWithTimeout } from "@/utils/ai-readiness";
+import { FileCheck, FileCheckContext, CheckResult } from "../../types";
+import { CHECK_WEIGHTS } from "../../config";
+import { fetchWithTimeout } from "../../utils";
 
 export interface RobotsCheckResult extends CheckResult {
     sitemapUrls: string[];

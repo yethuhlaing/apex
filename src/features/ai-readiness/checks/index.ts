@@ -1,9 +1,9 @@
 export * from "./html";
 export * from "./files";
 
-import { Check, CheckContext, CheckResult, FileCheckContext } from "@/types/ai-readiness";
+import { Check, CheckContext, CheckResult, FileCheckContext } from "../types";
 import { htmlChecks } from "./html";
-import { robotsCheck, sitemapCheck, llmsCheck } from "./files";
+import { robotsCheck, sitemapCheck, llmsCheck, type RobotsCheckResult } from "./files";
 
 // Run all HTML checks
 export async function runHtmlChecks(context: CheckContext): Promise<CheckResult[]> {
@@ -22,7 +22,7 @@ export async function runFileChecks(
     context: FileCheckContext
 ): Promise<{ robots: CheckResult; sitemap: CheckResult; llms: CheckResult }> {
     // Run robots check first to get sitemap URLs
-    const robotsResult = await robotsCheck.run(context);
+    const robotsResult = (await robotsCheck.run(context)) as RobotsCheckResult;
 
     // Run sitemap check with URLs from robots.txt
     const sitemapResult = await sitemapCheck.runWithRobotsSitemaps(

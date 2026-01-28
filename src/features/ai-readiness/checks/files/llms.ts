@@ -1,6 +1,6 @@
-import { FileCheck, FileCheckContext, CheckResult } from "@/types/ai-readiness";
-import { CHECK_WEIGHTS, LLMS_TXT_VARIATIONS } from "@/config/ai-readiness";
-import { fetchWithTimeout } from "@/utils/ai-readiness";
+import { FileCheck, FileCheckContext, CheckResult } from "../../types";
+import { CHECK_WEIGHTS, LLMS_TXT_VARIATIONS } from "../../config";
+import { fetchWithTimeout } from "../../utils";
 
 export const llmsCheck: FileCheck = {
     id: "llms-txt",
